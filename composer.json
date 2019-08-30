@@ -1,0 +1,36 @@
+{
+    "name": "michaelbiberich/xmask",
+    "description": "Convert string masks to regular expression patterns",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "xmask",
+        "mask",
+        "regular expression"
+    ],
+    "homepage": "https://github.com/michaelbiberich/xmask",
+    "authors": [
+        {
+            "name": "Michael Biberich",
+            "email": "michael@biberich.at"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": "7.3.*"
+    },
+    "require-dev": {
+        "pds/skeleton": "^1",
+        "phpunit/phpunit": "^8"
+    },
+    "autoload": {
+        "psr-4": {
+            "MichaelBiberich\\Xmask\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "MichaelBiberich\\Xmask\\Test\\": "tests/"
+        }
+    }
+}
