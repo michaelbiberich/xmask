@@ -45,7 +45,7 @@ $xmask = new Xmask('xxx456xxx', [
 ]);
 
 $pattern = $xmask->pattern();
-// => string(67) "/^([0-9]{1})([0-9]{1})([0-9]{1})456([0-9]{1})([0-9]{1})([0-9]{1})$/"
+// => string(67) "/^([0-9])([0-9])([0-9])456([0-9])([0-9])([0-9])$/"
 
 preg_match($pattern, '123456789'); // => int(1)
 preg_match($pattern, '123000789'); // => int(0)
@@ -68,7 +68,7 @@ $cyprusVatinXmask = new Xmask('CYxxxxxxxxX', [
 ]);
 
 $cyprusVatinPattern = $cyprusVatinXmask->pattern();
-// => string(96) "/^CY([0-9]{1})([0-9]{1})([0-9]{1})([0-9]{1})([0-9]{1})([0-9]{1})([0-9]{1})([0-9]{1})([A-Z]{1})$/"
+// => string(96) "/^CY([0-9])([0-9])([0-9])([0-9])([0-9])([0-9])([0-9])([0-9])([A-Z])$/"
 
 preg_match($cyprusVatinPattern, 'CY12345678A'); // => int(1)
 preg_match($cyprusVatinPattern, 'CY123456789'); // => int(0)

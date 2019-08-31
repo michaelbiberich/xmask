@@ -63,7 +63,7 @@ final class Xmask
     private function substitute(string $maskPart, array $substitutions): string
     {
         return array_key_exists($maskPart, $substitutions)
-            ? "([{$substitutions[$maskPart]}]{1})"
+            ? "([{$substitutions[$maskPart]}])"
             : $maskPart;
     }
 

@@ -43,7 +43,7 @@ final class XmaskTest extends TestCase
 
         $pattern = $xmask->pattern();
 
-        $this->assertSame('/^([0-9]{1})([0-9]{1})([0-9]{1})456([0-9]{1})([0-9]{1})([0-9]{1})$/', $pattern);
+        $this->assertSame('/^([0-9])([0-9])([0-9])456([0-9])([0-9])([0-9])$/', $pattern);
     }
 }
 
